@@ -1,46 +1,39 @@
-# Probabilistic Models & Bayesian Inference: Telco Churn Project
+<h1 align="center">🔮 Probabilistic Models & Bayesian Inference: Telco Churn Project</h1>
 
-[![Bayesian Inference](https://img.shields.io/badge/Inference-PyMC-blueviolet?style=flat-square&logo=python)](https://www.pymc.io/)
-[![Visualization](https://img.shields.io/badge/Diagnostics-ArviZ-blue?style=flat-square)](https://arviz-devs.github.io/arviz/)
-[![Probabilistic Graphical Models](https://img.shields.io/badge/PGM-pgmpy**-green?style=flat-square)](https://pgmpy.org/)
+<p align="center">
+  <img src="https://img.shields.io/badge/Inference-PyMC-blueviolet?style=for-the-badge&logo=python&logoColor=white" alt="PyMC">
+  <img src="https://img.shields.io/badge/Diagnostics-ArviZ-blue?style=for-the-badge" alt="ArviZ">
+  <img src="https://img.shields.io/badge/PGM-pgmpy-green?style=for-the-badge" alt="pgmpy">
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License">
+</p>
 
-This repository provides an advanced, hands-on framework for probabilistic modeling, continuous uncertainty quantification, and Bayesian inference applied to telecom customer churn analysis. 
+<p align="center">
+  <strong>An advanced, production-grade framework for probabilistic machine learning, continuous uncertainty quantification, and structural Bayesian inference optimized for enterprise risk management.</strong>
+</p>
 
 ---
 
 ## 📌 Project Overview
 
-In traditional machine learning pipelines, models output deterministic point predictions (e.g., a single probability score). In high-stakes business deployment, understanding the **epistemic uncertainty** around those predictions is crucial for managing financial risk.
+In traditional enterprise machine learning pipelines, classification systems yield static, deterministic point predictions (e.g., a rigid, single-point probability calculation). In high-value customer retention environments, tracking the **epistemic uncertainty** surrounding those risk assumptions is crucial for optimal capital allocation.
 
-This project shifts from rigid frequentist modeling to a comprehensive Bayesian paradigm. By evaluating customer behavior, contract configurations, and historical usage metrics, this workflow maps out parameter distributions, updates beliefs sequentially as new streaming data arrives, and isolates complex causal dependencies using graphical models.
+This toolkit establishes a mathematically rigorous transition from frequentist engineering to a native **Bayesian paradigm**. By profiling structured behavioral matrices, contract typologies, and engagement data, this framework extracts comprehensive continuous parameter posteriors, updates model beliefs over streaming real-time pipelines, and maps structural causal dependencies through advanced graphical topologies.
 
 ---
 
 ## ⚡ Technical Core & Features
 
-* **Quantifying Parameter Uncertainty:** Move beyond single-point estimates like Maximum Likelihood Estimation (MLE) by exploring Maximum A Posteriori (MAP) and full Bayesian posteriors that natively expose risk parameters.
-* **Sequential Learning Systems:** Implement conjugate Beta-Binomial update loops to simulate streaming real-time data environments where customer risk profiles adapt dynamically with every new transaction.
-* **Causal Dependency Mapping:** Construct Probabilistic Graphical Models (PGMs) to explore conditional independence structures inside Directed Acyclic Graphs (Bayesian Networks) and Undirected Networks (Markov Random Fields).
-* **Modern MCMC Sampling Stack:** Write, tune, and evaluate Generalized Linear Models (GLMs) using Markov Chain Monte Carlo (MCMC) sampling strategies inside **PyMC**.
-* **Rigorous Sampler Diagnostics:** Run convergence diagnostics like $\hat{R}$ (Gelman-Rubin), Effective Sample Size (ESS), and energy isolation plots using **ArviZ** to ensure absolute posterior validity.
+* 📊 **Parameter Uncertainty Quantification:** Circumvent overconfident Maximum Likelihood Estimations (MLE). This ecosystem leverages Maximum A Posteriori (MAP) optimizations alongside full Bayesian joint posteriors to expose parameter variance.
+* 🔄 **Conjugate Sequential Learning:** Architect live tracking systems utilizing custom Beta-Binomial updating architectures, allowing model expectations to adapt dynamically as operational transaction signals arrive.
+* 🕸️ **Causal Topology Mapping:** Deploy complex Probabilistic Graphical Models (PGMs) to map out exact directed independence constraints within Directed Acyclic Graphs (Bayesian Networks) and undirected frameworks (Markov Random Fields).
+* ⚙️ **Production MCMC Engine:** Construct and scale Bayesian Generalized Linear Models (GLMs) driven by custom No-U-Turn Samplers (NUTS) and Markov Chain Monte Carlo (MCMC) protocols via **PyMC**.
+* 🔍 **Airtight Chain Diagnostics:** Run continuous integration quality checks on backend sampler geometry evaluating Gelman-Rubin convergence ($\hat{R} \to 1.0$), Effective Sample Size (ESS), and energy isolation divergence boundaries via **ArviZ**.
 
 ---
 
-## 📂 Repository Structure
+## 📂 System Architecture
 
-* **`W6_Probabilistic_Models_Assignment.ipynb`** — The primary architecture workspace containing mathematical formulations, code implementations, MCMC sampler configurations, and diagnostic validation.
-* **`Telco-Customer-Churn.csv`** — The baseline dataset profiling 7,043 historical customer accounts across 21 feature fields.
-* **`telco_bayes_lr_v1.pkl`** — A serialized trace and model artifact storing the post-MCMC sampling state for downstream inference deployment.
-
----
-
-## ⚙️ Core Pipeline Architecture
-
-The engine is organized into five progressive pillars of probabilistic engineering:
-
-```mermaid
-graph TD
-    A[1. Frequentist vs. Bayesian Estimation] --> B[2. Sequential Bayesian Updating]
-    B --> C[3. Probabilistic Graphical Models]
-    C --> D[4. MCMC Bayesian Logistic Regression]
-    D --> E[5. Trace Diagnostics & Inference]
+```text
+├── W6_Probabilistic_Models_Assignment.ipynb  # Main structural notebook, modeling workflows, & diagnostics
+├── Telco-Customer-Churn.csv                  # Standard operational dataset (7,043 customer accounts × 21 variables)
+└── telco_bayes_lr_v1.pkl                     # Frozen post-MCMC serialized sampling trace for production inference
