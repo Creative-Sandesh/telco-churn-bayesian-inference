@@ -377,10 +377,6 @@ This project is licensed under the **MIT License**.
 
 **Sandesh Bohara**
 
-BSc (Hons) Information Technology  
-Techspire College | APIIT / APU  
-Aspiring Cybersecurity Engineer & AI Enthusiast
-
 ---
 
 <p align="center">
